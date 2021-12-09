@@ -12,7 +12,7 @@ function CreateToDo() {
 
   const onSubmit = ({ toDo }: IForm) => {
     setToDos((oldToDos) => [
-      { text: toDo, catrgory: "TO_DO", id: Date.now() },
+      { text: toDo, category: "TO_DO", id: Date.now() },
       ...oldToDos,
     ]);
     setValue("toDo", "");

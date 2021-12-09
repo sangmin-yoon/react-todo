@@ -3,7 +3,7 @@ import { atom } from "recoil";
 export interface IToDo {
   id: number;
   text: string;
-  catrgory: "TO_DO" | "DOING" | "DONE";
+  category: "TO_DO" | "DOING" | "DONE";
 }
 
 export const toDoState = atom<IToDo[]>({
