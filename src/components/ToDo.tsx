@@ -29,13 +29,3 @@ function ToDo({ text, category, id }: IToDo) {
 }
 
 export default ToDo;
-const onClick = (category: ToDo["category"]) => {
-  setToDos((prev) =>
-    prev.map((toDo) => {
-      if (toDo.id === id) {
-        return { ...toDo, category };
-      }
-      return toDo;
-    })
-  );
-};
